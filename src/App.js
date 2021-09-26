@@ -1,9 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './Components/Header/Header';
+import MainShop from './Components/MainShop/MainShop';
+
+
+
 
 function App() {
   return (
-    <div className="App">
+    <div>
+
+      <Header></Header>
+      <MainShop></MainShop>
+
+
+
 
     </div>
   );

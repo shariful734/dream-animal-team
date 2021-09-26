@@ -1,0 +1,25 @@
+.product{
+    border: 3px solid gray;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: rgba(71, 187, 71, 0.274);
+}
+
+
+
+.product img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.purchase-btn{
+    margin-bottom: 15px;
+    background-color:sandybrown;
+    color: white;
+    font-weight: 700;
+    width: 150px;
+    height: 30px;
+}

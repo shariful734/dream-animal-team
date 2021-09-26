@@ -1,0 +1,14 @@
+.Header{
+    border-bottom: 3px solid rgba(231, 227, 227, 0.863);
+    margin: 0 70px;
+    text-align: center;
+}
+
+.Header-Budget{
+    color: gold;
+    margin-bottom: 20px;   
+}
+
+h1{
+    font-size: 50px;
+}
