@@ -3,8 +3,8 @@ import './Product.css'
 import React from 'react';
 
 const Product = (probs) => {
-    console.log(probs.produc)
-    const { name, img, price, age, type, id } = probs.product
+
+    const { name, img, price, age, type, id, } = probs.product
     return (
         <div className="product">
 
@@ -20,7 +20,9 @@ const Product = (probs) => {
 
             <h1>Price: {price}</h1>
 
-            <button className="purchase-btn">Add To cart</button>
+            <button
+                onClick={() => probs.addToCart(probs.product)}
+                className="purchase-btn">Add To cart</button>
 
         </div>
     );

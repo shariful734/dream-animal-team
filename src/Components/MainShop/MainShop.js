@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react'
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product'
 import './MainShop.css'
 
+// calling the data or Api 
+
 const MainShop = () => {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
 
@@ -14,6 +19,14 @@ const MainShop = () => {
 
     }, [])
 
+    // event handler here 
+
+    const addToCart = (product) => {
+
+        const newCart = [...cart, product];
+
+        setCart(newCart);
+    }
 
 
 
@@ -28,6 +41,7 @@ const MainShop = () => {
                     products.map(product => <Product
                         product={product}
                         key={product.id}
+                        addToCart={addToCart}
                     >
                     </Product>)
                 }
@@ -36,7 +50,7 @@ const MainShop = () => {
 
             <div className="cart">
 
-                <h1>cart</h1>
+                <Cart item={cart}></Cart>
 
             </div>
 
