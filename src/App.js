@@ -8,7 +8,7 @@ import MainShop from './Components/MainShop/MainShop';
 
 function App() {
   return (
-    <div>
+    <div className="main-container">
 
       <Header></Header>
       <MainShop></MainShop>

@@ -18,11 +18,11 @@ const Product = (probs) => {
 
             <h5>special ID No: {id}</h5>
 
-            <h1>Price: {price}</h1>
+            <h1 className="price"><i class="fas fa-money-bill-wave icon-green"></i>Price: {price}$</h1>
 
             <button
                 onClick={() => probs.addToCart(probs.product)}
-                className="purchase-btn">Add To cart</button>
+                className="purchase-btn"><i class="fas fa-shopping-cart icon"></i>Add To cart</button>
 
         </div>
     );

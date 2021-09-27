@@ -17,11 +17,13 @@ const Cart = (probs) => {
     return (
         <div>
 
-            <h1>Animals</h1>
+            <h2>Squad and Price Summary</h2>
 
             <h3>animals Added:{probs.item.length}</h3>
 
-            <h2>Total Price {total}</h2>
+            <h2>Total Price: {total}</h2>
+
+            <h3 className="squad">Your Animal Squad:</h3>
 
             {
                 item.map(animal => <li>{animal.name}</li>)

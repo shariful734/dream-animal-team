@@ -1,5 +1,5 @@
 .Header{
-    border-bottom: 3px solid rgba(231, 227, 227, 0.863);
+    border-bottom: 3px solid rgba(27, 27, 27, 0.699);
     margin: 0 70px;
     text-align: center;
 }
@@ -11,4 +11,7 @@
 
 h1{
     font-size: 50px;
+    margin-top: 0px;
+    padding-top: 50px;
+
 }
